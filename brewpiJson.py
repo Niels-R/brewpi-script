@@ -23,11 +23,11 @@ jsonCols = ("\"cols\":[" +
             "{\"type\":\"datetime\",\"id\":\"Time\",\"label\":\"Time\"}," +
             "{\"type\":\"number\",\"id\":\"BeerTemp\",\"label\":\"Beer temperature\"}," +
             "{\"type\":\"number\",\"id\":\"BeerSet\",\"label\":\"Beer setting\"}," +
-            "{\"type\":\"string\",\"id\":\"BeerAnn\",\"label\":\"Beer Annotate\"}," +
+            "{\"type\":\"string\",\"id\":\"BeerAnn\",\"label\":\"Beer annotation\"}," +
             "{\"type\":\"number\",\"id\":\"FridgeTemp\",\"label\":\"Fridge temperature\"}," +
             "{\"type\":\"number\",\"id\":\"FridgeSet\",\"label\":\"Fridge setting\"}," +
-            "{\"type\":\"string\",\"id\":\"FridgeAnn\",\"label\":\"Fridge Annotate\"}," +
-            "{\"type\":\"number\",\"id\":\"RoomTemp\",\"label\":\"Room temp.\"}," +
+            "{\"type\":\"string\",\"id\":\"FridgeAnn\",\"label\":\"Fridge annotation\"}," +
+            "{\"type\":\"number\",\"id\":\"RoomTemp\",\"label\":\"Room temperature\"}," +
             "{\"type\":\"number\",\"id\":\"State\",\"label\":\"State\"}" +
             "]")
 
