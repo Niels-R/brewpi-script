@@ -249,14 +249,10 @@ def startBeer(beerName):
         lastDay = day
         # define a JSON file to store the data
         jsonFileName = config['beerName'] + '-' + day
-        #if a file for today already existed, add suffix
-        if os.path.isfile(dataPath + jsonFileName + '.json'):
-            i = 1
-            while os.path.isfile(dataPath + jsonFileName + '-' + str(i) + '.json'):
-                i += 1
-            jsonFileName = jsonFileName + '-' + str(i)
         localJsonFileName = dataPath + jsonFileName + '.json'
-        brewpiJson.newEmptyFile(localJsonFileName)
+        # Create the the file if it doesn't exist
+        if not os.path.isfile(localJsonFileName):
+            brewpiJson.newEmptyFile(localJsonFileName)
 
         # Define a location on the web server to copy the file to after it is written
         wwwJsonFileName = wwwDataPath + jsonFileName + '.json'
